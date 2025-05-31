@@ -1,0 +1,22 @@
+Test Case: GTL_TC_04 – Negative topCount value
+
+Request:
+```json
+{
+  "key": "JULKtdueaWAXsvkq1Ep2",
+  "topCount": -5,
+  "needImage": false
+}
+
+Expected Result:
+HTTP status: 400 Bad Request or
+IsSuccess: false, with error about invalid topCount
+
+Actual Result:
+HTTP status: 200 OK
+IsSuccess: true
+Teachers returned despite invalid value
+
+Screenshot: screenshots/GTL_TC_04_negative-topcount.png
+
+Status: Failed – validation missing
