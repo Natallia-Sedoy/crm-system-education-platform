@@ -1,0 +1,22 @@
+Test Case: GTL_TC_03 – Missing API Key
+
+Request:
+```json
+{
+  "topCount": 2,
+  "needImage": false
+}
+
+Expected Result:
+HTTP status: 401 Unauthorized OR
+IsSuccess: false
+ErrorMessage: "Missing API key" or "Invalid API key"
+
+Actual Result:
+Status: 200 OK
+IsSuccess: false
+ErrorMessage: "Invalid API key"
+
+Screenshot: screenshots/GTL_TC_06_missing-key.png
+
+Status: Pass
