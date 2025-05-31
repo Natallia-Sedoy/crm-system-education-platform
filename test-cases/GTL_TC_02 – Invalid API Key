@@ -1,0 +1,27 @@
+Test Case: GTL_TC_02 – Invalid API Key
+
+Endpoint:  
+POST `/GetTeacherList`
+
+Request Body:
+```json
+{
+  "key": "123",
+  "topCount": 2,
+  "needImage": false
+}
+
+Expected Result:
+Status code: 200 OK
+IsSuccess: false
+ErrorMessage: "Invalid API key"
+Teachers: null
+
+Actual Result:
+Status: 200 OK
+IsSuccess: false
+ErrorMessage: "Invalid API key"
+
+Screenshot: screenshots/GTL_TC_02_invalid-key.png
+
+Test Status: Pass
