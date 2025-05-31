@@ -1,0 +1,22 @@
+Test Case: GTL_TC_05 – needImage sent as string
+
+Request:
+```json
+{
+  "key": "JULKtdueaWAXsvkq1Ep2",
+  "topCount": 2,
+  "needImage": "true"
+}
+
+Expected Result:
+HTTP status: 400 Bad Request
+OR IsSuccess: false, with error about invalid type
+
+Actual Result:
+Status: 200 OK
+IsSuccess: true
+No error despite wrong data type
+
+Screenshot: screenshots/GTL_TC_05_invalid-needImage.png
+
+Status: Failed – type validation is missing
